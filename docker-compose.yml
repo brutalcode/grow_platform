@@ -51,10 +51,11 @@ services:
       DB_PASSWORD: 1q2w3e4r
       DB_NAME: drupal
       DB_DRIVER: mysql
-#      PHP_XDEBUG: 1
-#      PHP_XDEBUG_DEFAULT_ENABLE: 1
-#      PHP_XDEBUG_REMOTE_CONNECT_BACK: 0
-#      PHP_XDEBUG_REMOTE_HOST: "10.254.254.254"
+      PHP_XDEBUG: 1
+      PHP_XDEBUG_DEFAULT_ENABLE: 1
+      PHP_XDEBUG_REMOTE_CONNECT_BACK: 0
+      PHP_XDEBUG_REMOTE_HOST: "10.0.75.1"
+      PHP_XDEBUG_IDEKEY: "phpstorm"
 #      PHP_XDEBUG_PROFILER_OUTPUT_DIR: /mnt/files/xdebug/profiler
 #      PHP_XDEBUG_TRACE_OUTPUT_DIR: /mnt/files/xdebug/traces
 #      PHP_BLACKFIRE: 1
@@ -173,17 +174,17 @@ services:
       - 'traefik.port=8025'
       - 'traefik.frontend.rule=Host:mailhog.drupal.docker.localhost'
 
-  nodejs:
-    image: wodby/drupal-node:1.0-1.0.0
-    environment:
-       NODE_SERVICE_KEY: node-service-key
-    labels:
-      - 'traefik.backend=nodejs'
-      - 'traefik.port=8080'
-      - 'traefik.frontend.rule=Host:nodejs.drupal.docker.localhost'
-    volumes:
-      - ./nodejs:/app
-    command: sh -c 'npm install && npm run start'
+#  nodejs:
+#    image: wodby/drupal-node:1.0-1.0.0
+#    environment:
+#       NODE_SERVICE_KEY: node-service-key
+#    labels:
+#      - 'traefik.backend=nodejs'
+#      - 'traefik.port=8080'
+#      - 'traefik.frontend.rule=Host:nodejs.drupal.docker.localhost'
+#    volumes:
+#      - ./nodejs:/app
+#    command: sh -c 'npm install && npm run start'
 
 #  node:
 #    image: node:alpine
@@ -195,7 +196,7 @@ services:
 #    expose:
 #      - "3000"
 #    volumes:
-#      - ./path/to/your/single-page-app:/app
+#      - ./nodejs:/app
 #    command: sh -c 'npm install && npm run start'
 
 #  memcached:
