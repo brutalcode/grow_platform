@@ -10,5 +10,7 @@
     "issues": "https://www.drupal.org/project/issues/twilio_chat",
     "source": "http://cgit.drupalcode.org/twilio_chat"
   },
-  "require": { }
+  "require": {
+    "twilio/sdk": "5.15.3"
+  }
 }

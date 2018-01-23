@@ -1,0 +1,11 @@
+
+twilio_chat.twilio_security_form:
+  path: '/admin/config/twilio_chat/twiliosecurity'
+  defaults:
+    _form: '\Drupal\twilio_chat\Form\TwilioSecurityForm'
+    _title: 'TwilioSecurityForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+

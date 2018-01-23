@@ -1,0 +1,7 @@
+twilio_chat.twilio_security_form:
+  title: 'TwilioSecurityForm'
+  route_name: twilio_chat.twilio_security_form
+  description: 'A description for the menu entry'
+  parent: system.admin_config_system
+  weight: 99
+
