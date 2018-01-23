@@ -1,0 +1,22 @@
+uuid: b58005c3-b1d5-450d-829e-77376a5b11a9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - grow_platform_theme
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: grow_platform_theme_local_tasks
+theme: grow_platform_theme
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

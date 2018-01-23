@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains twilio_chat.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function twilio_chat_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the twilio_chat module.
+    case 'help.page.twilio_chat':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module gives oportunuties for using Twilio Shat service.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function twilio_chat_theme() {
+  return [
+    'twilio_chat' => [
+      'render element' => 'children',
+    ],
+  ];
+}

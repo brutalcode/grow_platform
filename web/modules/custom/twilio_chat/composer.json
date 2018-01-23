@@ -1,0 +1,14 @@
+{
+  "name": "drupal/twilio_chat",
+  "type": "drupal-module",
+  "description": "This module gives oportunuties for using Twilio Shat service.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/twilio_chat",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/twilio_chat",
+    "source": "http://cgit.drupalcode.org/twilio_chat"
+  },
+  "require": { }
+}

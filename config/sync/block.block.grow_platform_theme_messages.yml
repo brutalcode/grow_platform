@@ -1,0 +1,22 @@
+uuid: 93033b69-2e58-4c17-8ed4-0a9d35e340b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - grow_platform_theme
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: grow_platform_theme_messages
+theme: grow_platform_theme
+region: navbar_branding
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

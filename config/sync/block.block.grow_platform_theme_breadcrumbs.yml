@@ -1,0 +1,22 @@
+uuid: 6c83c521-ae17-487c-ac1d-1ce2a3480a51
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - grow_platform_theme
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: grow_platform_theme_breadcrumbs
+theme: grow_platform_theme
+region: navbar_branding
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

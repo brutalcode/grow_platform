@@ -1,0 +1,5 @@
+name: Twilio chat
+type: module
+description: This module gives oportunuties for using Twilio Shat service.
+core: 8.x
+package: Custom

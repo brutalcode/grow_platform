@@ -1,0 +1,20 @@
+uuid: cebcd348-7674-40ce-acf5-bd216085f918
+langcode: en
+status: true
+dependencies:
+  theme:
+    - grow_platform_theme
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: grow_platform_theme_page_title
+theme: grow_platform_theme
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

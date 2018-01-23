@@ -1,0 +1,25 @@
+uuid: 599fd81c-18db-4c35-9672-b55b2b76271c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - grow_platform_theme
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: grow_platform_theme_branding
+theme: grow_platform_theme
+region: navbar_branding
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
