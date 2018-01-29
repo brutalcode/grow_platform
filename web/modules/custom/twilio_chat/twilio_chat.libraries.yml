@@ -1,0 +1,10 @@
+chat-block:
+  version: 1.x
+  css:
+    component:
+      css/twilio-chat.css: {}
+  js:
+    js/twilio-chat.js: {}
+    https://media.twiliocdn.com/sdk/js/chat/v1.0/twilio-chat.js: {type: external, minified: false}
+  dependencies:
+        - core/jquery

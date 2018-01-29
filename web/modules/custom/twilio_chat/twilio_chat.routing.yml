@@ -9,3 +9,11 @@ twilio_chat.twilio_security_form:
   options:
     _admin_route: TRUE
 
+
+twilio_chat.twilio_controller_token:
+  path: '/twilio_chat/token'
+  defaults:
+    _controller: '\Drupal\twilio_chat\Controller\TwilioController::token'
+    _title: 'token'
+  requirements:
+    _permission: 'access content'

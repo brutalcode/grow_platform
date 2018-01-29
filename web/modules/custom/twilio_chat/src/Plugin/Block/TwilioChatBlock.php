@@ -60,7 +60,7 @@ class TwilioChatBlock extends BlockBase implements ContainerFactoryPluginInterfa
     $build = [];
 //    $build['twilio_chat_block']['#markup'] = 'Implement TwilioChatBlock.';
     $build['twilio_chat_block']['#theme'] = 'twilio_chat';
-
+    $build['twilio_chat_block']['#attached']['library'] = 'twilio_chat/chat-block';
     return $build;
   }
 
